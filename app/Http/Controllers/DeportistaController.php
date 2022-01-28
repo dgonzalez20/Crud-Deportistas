@@ -31,7 +31,7 @@ class DeportistaController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     *
+     * Equivalente a historial de datos,
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
@@ -46,7 +46,7 @@ class DeportistaController extends Controller
 
     // Guardar datos
         $deportistas->save();
-
+        //Redirecciona a /deportistas
         return redirect("/deportistas");
     }
 
@@ -63,13 +63,17 @@ class DeportistaController extends Controller
 
     /**
      * Show the form for editing the specified resource.
+     * Metodo para editar en este caso deportistas, filtramos por $id
+     * Atributo del formulario
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        //
+        //Declaración de variable deportista que llama al modelo
+        $deportista=Deportista::find($id);
+        return view('deportista.edit')->with('deportista',$deportista);
     }
 
     /**
@@ -80,18 +84,25 @@ class DeportistaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
+
     {
-        //
+        $deportista=Deportista::find($id);
+        $deportista->nombre= $request->get("nombre");
+        $deportista->apellido=$request->get("apellido");
+        $deportista->direcccion=$request->get("direccion");
+        $deportista->temporadas=$request->get("temporadas");
+        $deportista->CoosteLicencia=$request->get("CosteLicencia");
     }
 
     /**
      * Remove the specified resource from storage.
+
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        //
+        return view("deportista.delete");
     }
 }
