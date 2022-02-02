@@ -14,8 +14,5 @@ use App\Http\Controllers\DeportistaController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::resource("deportistas",DeportistaController::class);
