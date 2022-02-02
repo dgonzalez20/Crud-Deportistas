@@ -82,6 +82,8 @@ class DeportistaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
+     * Metódo que actualiza registros estos van filtrados por id
+     * Request, método Get metodo del formulario
      */
     public function update(Request $request, $id)
 
