@@ -1,5 +1,5 @@
 
- @extends("views.Plantilla.plantillabase");
+ @include(".Plantilla.plantillabase")
 
  @section("contenido");
 <a href="deportistas/create" class="btn btn-primary">Crear Deportista </a>
@@ -11,7 +11,7 @@
          <th scope="col"> Nombre </th>
          <th scope="col">Apellido</th>
          <th scope="col">Dirección  </th>
-         <th scope="col">Temporadas </th>
+         <th sciope="col">Temporadas </th>
          <th scope="col">Coste licencia </th>
          <th scope="col">Acciones  </th>
      </tr>

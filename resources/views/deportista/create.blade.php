@@ -1,6 +1,6 @@
-@extends("views.Plantilla.plantillabase");
+@extends("views.Plantilla.plantillabase")
 
-@section("contenido");
+@section("contenido")
  h2>Crear nuevo Deportista </h2>
 
 <form action="/deportistas" method="POST">

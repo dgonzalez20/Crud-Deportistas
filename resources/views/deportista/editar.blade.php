@@ -1,5 +1,5 @@
-@extends(Plantilla.plantillabase");
-@section("contenido");
+@extends(Plantilla.plantillabase")
+@section("contenido")
 <form action="/deportistas/{{$deportista->id}}" method="POST">
     @csrf
     @method("PUT")
