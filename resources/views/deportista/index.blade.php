@@ -1,5 +1,5 @@
 
- @include(".Plantilla.plantillabase")
+ @extends ("Plantilla.plantillabase")
 
  @section("contenido");
 <a href="deportistas/create" class="btn btn-primary">Crear Deportista </a>
@@ -7,7 +7,7 @@
  <table class="table table-dark table-striped mt-4 ">
      <thead>
      <tr>
-         <th scope="col">ID </th>
+         <th scope="col">ID</th>
          <th scope="col"> Nombre </th>
          <th scope="col">Apellido</th>
          <th scope="col">Dirección  </th>
@@ -17,9 +17,11 @@
      </tr>
      </thead>
      <tbody>
+     <!--For que accede a todos los atributos del formulario Create.bade.php
+     -->
       @foreach ($deportistas as $deportista)
      <tr>
-      <td>{{$deportista->ID }}</td>
+      <td>{{$deportista->id }}</td>
       <td>{{$deportista->Nombre}}</td>
       <td>{{$deportista->Apellido }}</td>
       <td>{{$deportista->Dirección}} </td>

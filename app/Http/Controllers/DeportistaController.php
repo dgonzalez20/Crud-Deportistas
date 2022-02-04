@@ -14,9 +14,12 @@ class DeportistaController extends Controller
      */
     public function index()
     {
+        /*Declaro variable deportistas= Deportistas:all obtngo datos del formulario
+        En base a la vista index en la variable */
+        $deportistas = Deportista::all();
 
-     $deportistas= Deportista::all();
-        return view("deportista.index")->with("deportistas",$deportistas);
+        return view("deportista.index")->with("deportistas", $deportistas);
+
     }
 
     /**
@@ -26,6 +29,7 @@ class DeportistaController extends Controller
      */
     public function create()
     {
+        /*Pido la vista create para crear nuevos deportistas */
         return view("deportista.create");
     }
 
@@ -34,6 +38,9 @@ class DeportistaController extends Controller
      * Equivalente a historial de datos,
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
+     * Método que registra todos los datos, generando nuevo objeto deportistas, en base al modelo
+     * Request --> get--> id formularip
+     *
      */
     public function store(Request $request)
     {
@@ -44,9 +51,8 @@ class DeportistaController extends Controller
     $deportistas->temporadas=$request->get("temporadas");
     $deportistas->CosteLicencia=$request->get("CosteLicencia");
 
-    // Guardar datos
+/*Guardamos los datos con el método save,una vez guardados  */
         $deportistas->save();
-        //Redirecciona a /deportistas
         return redirect("/deportistas");
     }
 
@@ -103,6 +109,7 @@ class DeportistaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
     public function destroy($id)
     {
         return view("deportista.delete");
