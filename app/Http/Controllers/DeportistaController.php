@@ -43,18 +43,20 @@ class DeportistaController extends Controller
      *
      */
     public function store(Request $request)
-    {
-        /*Objeto Deportista*/
-    $deportistas=new Deportista();
-    $deportistas->nombre=$request->get("nombre");
-    $deportistas->apellido=$request->get("apellido");
-    $deportistas->direccion=$request->get("direccion");
-    $deportistas->temporadas=$request->get("temporadas");
-    $deportistas->CosteLicencia=$request->get("CosteLicencia");
+     {
+       Deportista::create($request->all());
+       
+    //     /*Objeto Deportista*/
+    // $deportistas=new Deportista();
+    // $deportistas->nombre=$request->get("nombre");
+    // $deportistas->apellido=$request->get("apellido");
+    // $deportistas->direccion=$request->get("direccion");
+    // $deportistas->temporadas=$request->get("temporadas");
+    // $deportistas->CosteLicencia=$request->get("CosteLicencia");
 
 /*Guardamos los datos con el método save,una vez guardados  */
-        $deportistas->save();
-        return redirect("/deportistas");
+        // $deportistas->save();
+        return redirect("deportistas");
     }
 
     /**

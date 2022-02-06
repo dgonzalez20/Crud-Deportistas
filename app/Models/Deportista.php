@@ -16,4 +16,6 @@ class Deportista extends Model
         'CosteLicencia',
 
     ];
+
+
 }
