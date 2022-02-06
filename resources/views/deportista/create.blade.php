@@ -20,17 +20,17 @@
     </div>
     <div class="mb-3">
         <label for="temporadas" class="form-label">Temporadas </label>
-        <input id="temporadas" name="temporadas " type="number" step="any" value="0.00" class="form-control" tabindex="3">
+        <input id="temporadas" name="temporadas " type="number" value="0.00" class="form-control" tabindex="3">
     </div>
     <div class="mb-3">
         <label for="CosteLicencia" class="form-label">Coste Licencia  </label>
-        <input id="CosteLicencia" name="CosteLicencia" type="float" step="any" value="0.00" class="form-control" tabindex="3">
+        <input id="CosteLicencia" name="coste_licencia" type="float" value="0.00" class="form-control" tabindex="3">
     </div>
 
 <!--Enlace a deportistas, en boton que redirecciona a la lista de deportistas que ya estan creados -->
     <a href="{{ url("deportistas") }}" class="btn btn-secondary" tabindex="5">Cancelar Creación </a>
     <!--Botón para guardar los registros que se creen en el  formulariophp-->
-    <button type="submit" class="btn btn-primary" tabindex="4">Guardar  Deportista </button>
+    <button type="submit" class="btn btn-primary">Guardar  Deportista </button>
 </form>
 
 @endsection

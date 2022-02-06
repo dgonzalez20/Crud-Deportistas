@@ -15,11 +15,11 @@ class CreateDeportistasTable extends Migration
     {
         Schema::create('deportistas', function (Blueprint $table) {
             $table->id();
-            $table->string("Nombre");
-            $table->string("Apellido");
-            $table->string("Dirección",);
-            $table->string("Temporadas");
-            $table->string("Coste_Licencia");
+            $table->string("nombre");
+            $table->string("apellido");
+            $table->string("direccion",);
+            $table->string("temporadas");
+            $table->string("coste_licencia");
             $table->timestamps();
 
         });
