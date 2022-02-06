@@ -1,4 +1,4 @@
-@extends ("Plantilla.plantillabase")
+@extends("Plantilla.plantillabase")
 
  @section("contenido");
 <a href="deportistas/create" class="btn btn-primary">Crear Deportista </a>

@@ -1,5 +1,5 @@
 
-@extends("plantillabase");
+@extends("Plantilla.plantillabase");
 
 @section("contenido")
  h2>Crear nuevo Deportista </h2>
