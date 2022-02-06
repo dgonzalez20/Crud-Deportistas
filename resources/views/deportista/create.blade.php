@@ -4,7 +4,7 @@
 @section("contenido")
 
 
-<form action="/deportistas" method="POST">
+<form action="{{ url("deportistas") }}" method="POST">
 @csrf
     <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
