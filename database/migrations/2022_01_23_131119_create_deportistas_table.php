@@ -19,7 +19,7 @@ class CreateDeportistasTable extends Migration
             $table->string("Apellido",10);
             $table->string("Dirección",30);
             $table->integer("Temporadas");
-            $table-> decimal("Coste_Licencia",8,2);
+            $table->decimal("Coste_Licencia",8,2);
             $table->timestamps();
 
         });
