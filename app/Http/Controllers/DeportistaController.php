@@ -99,11 +99,14 @@ class DeportistaController extends Controller
 
     {
         $deportista=Deportista::find($id);
+
         $deportista->nombre= $request->get("nombre");
         $deportista->apellido=$request->get("apellido");
         $deportista->direcccion=$request->get("direccion");
         $deportista->temporadas=$request->get("temporadas");
         $deportista->CoosteLicencia=$request->get("CosteLicencia");
+
+        $deportista->save(); 
 
         return redirect('/deportistas');
     }
