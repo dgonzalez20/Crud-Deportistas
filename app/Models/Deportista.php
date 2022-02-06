@@ -17,5 +17,7 @@ class Deportista extends Model
 
     ];
 
+    protected $table = 'deportistas';
+
 
 }
