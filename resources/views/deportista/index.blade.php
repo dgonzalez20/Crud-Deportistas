@@ -28,7 +28,9 @@
       <td>{{$deportista->temporadas_value}} </td>
       <td>{{$deportista->coste_licencia}}</td>
          <td>
-             <a class=" btn btn-info">Editar Deportista </a>
+             <a href="{{  url("deportistas/".$deportista->id."/edit")}}"  class=" btn btn-info">Editar Deportista </a>
+          {{-- "deportistas/$deportista->id/edit" --}}
+          
          </td>
          <td>
             <form action="{{  url("deportistas/".$deportista->id)}}" method="`POST">

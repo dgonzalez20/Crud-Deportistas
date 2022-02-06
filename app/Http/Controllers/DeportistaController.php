@@ -83,7 +83,7 @@ class DeportistaController extends Controller
     {
         //Declaración de variable deportista que llama al modelo
         $deportista=Deportista::find($id);
-        return view('deportista.edit')->with('deportista',$deportista);
+        return view('deportista.editar',compact("deportista")); 
     }
 
     /**
@@ -100,13 +100,13 @@ class DeportistaController extends Controller
     {
         $deportista=Deportista::find($id);
 
-        $deportista->nombre= $request->get("nombre");
+        $deportista->nombre=$request->get("nombre");
         $deportista->apellido=$request->get("apellido");
-        $deportista->direcccion=$request->get("direccion");
-        $deportista->temporadas=$request->get("temporadas");
-        $deportista->CoosteLicencia=$request->get("CosteLicencia");
+        $deportista->direccion=$request->get("direccion");
+        $deportista->temporadas_value=$request->get("temporadas_value");
+        $deportista->coste_licencia=$request->get("coste_licencia");
 
-        $deportista->save(); 
+        $deportista->update(); 
 
         return redirect('/deportistas');
     }

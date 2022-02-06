@@ -6,11 +6,11 @@
 
     <div class="mb-3">
         <label for="" class="form-label">Nombre</label>
-        <input id="nombre" name="nombre" type="text" class="form-control" value="{{ old('nombre ') }}"
+        <input id="nombre" name="nombre" type="text" class="form-control" value="{{ old('nombre'),$deportista->nombre }}">
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Apellido</label>
-        <input id="apellido" name="apellido" type="text" class="form-control" value="{{ old('apellido') }}"
+        <input id="apellido" name="apellido" type="text" class="form-control" value="{{ old('apellido'), $deportista->apellido }}">
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Dirección </label>
@@ -26,6 +26,9 @@
     </div>
 
    <a href=/deportistas  class= btn-btn-secundary> Cancelar
+
+
+    
     
    </form>
 @endsection
