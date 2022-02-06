@@ -31,7 +31,7 @@
              <a class=" btn btn-info">Editar Deportista </a>
          </td>
          <td>
-            <form action="{{  url("deportistas/{{ $deportista->id}}")}}" method="`POST">
+            <form action="{{  url("deportistas/".$deportista->id)}}" method="`POST">
                 @csrf
                 @method("DELETE")
             <button class="btn-btn-danger">Eliminar Deportista </button>
