@@ -25,7 +25,7 @@
       <td>{{$deportista->nombre}}</td>
       <td>{{$deportista->apellido }}</td>
       <td>{{$deportista->direccion}} </td>
-      <td>{{$deportista->temporadas}} </td>
+      <td>{{$deportista->temporadas_value}} </td>
       <td>{{$deportista->coste_licencia}}</td>
          <td>
              <a class=" btn btn-info">Editar Deportista </a>
