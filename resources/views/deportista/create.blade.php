@@ -19,8 +19,9 @@
         <input id="direccion" name="direccion" type="text" class="form-control" tabindex="3">
     </div>
     <div class="mb-3">
-        <label for="temporadas" class="form-label">Temporadas </label>
-        <input id="temporadas" name="temporadas " type="number" value="0.00" class="form-control" tabindex="3">
+        <label for="temporadas_value" class="form-label">Temporadas </label>
+        
+    <input type="number"id="temporadas_value" name="temporadas_value" type="number" value="0.00 " class="form-control" tabindex="6">
     </div>
     <div class="mb-3">
         <label for="CosteLicencia" class="form-label">Coste Licencia  </label>

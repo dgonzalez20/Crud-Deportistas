@@ -12,8 +12,9 @@ class Deportista extends Model
     'nombre',
         'apellido',
         'direccion',
-        'temporadas',
+        'temporadas_value',
         'coste_licencia',
+        
 
     ];
 
