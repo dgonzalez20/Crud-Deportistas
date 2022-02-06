@@ -1,6 +1,6 @@
 @extends("Plantilla.plantillabase")
 @section("contenido")
-<form action="/deportistas/{{$deportista->id}}" method="POST">
+<form action={{ url("deportistas/".$deportista->id)}}" method="POST">
     @csrf
     @method("PUT")
 
@@ -25,7 +25,7 @@
         <input id="CosteLicencia" name="CosteLicencia" type="float" step="any"  class="form-control" value="{{ old('apellido') }}">
     </div>
 
-   <a href="{{ url("deportistas") }}"  class= btn-btn-secundary> Cancelar</a>
+   <a href="{{ url("deportistas") }}"  class= btn-btn-danger> Cancelar</a>
 
    <button type="submit" class="btn-btn-danger">Editar Deportista </button>
 

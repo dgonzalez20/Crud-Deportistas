@@ -108,7 +108,7 @@ class DeportistaController extends Controller
 
         $deportista->update(); 
 
-        return redirect('/deportistas');
+        return redirect('deportistas');
     }
 
     /**
