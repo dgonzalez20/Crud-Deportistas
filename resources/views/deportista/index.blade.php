@@ -26,7 +26,7 @@
       <td>{{$deportista->Apellido }}</td>
       <td>{{$deportista->Dirección}} </td>
       <td>{{$deportista->Temporadas}} </td>
-      <td>{{$deportista->Coste Licencia}}</td>
+      <td>{{$deportista->Coste_Licencia}}</td>
          <td>
              <a class=" btn btn-info">Editar Deportista </a>
              <button class="btn-btn-danger">Eliminar Deportista </button>
