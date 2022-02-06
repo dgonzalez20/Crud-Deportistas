@@ -16,3 +16,7 @@ use App\Http\Controllers\DeportistaController;
 
 
 Route::resource("deportistas",DeportistaController::class);
+
+Route::get('/', function () {
+    return view('welcome');
+});
