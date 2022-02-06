@@ -30,7 +30,7 @@ class DeportistaController extends Controller
     public function create()
     {
         /*Pido la vista create para crear nuevos deportistas */
-        return view("deportista.create");
+        return view("deportista.create"); //Viws.deportista.create.blade.php
     }
 
     /**
@@ -44,6 +44,7 @@ class DeportistaController extends Controller
      */
     public function store(Request $request)
     {
+        /*Objeto Deportista*/
     $deportistas=new Deportista();
     $deportistas->nombre=$request->get("nombre");
     $deportistas->apellido=$request->get("apellido");
@@ -64,7 +65,8 @@ class DeportistaController extends Controller
      */
     public function show($id)
     {
-        //
+
+        return view("borrar.blade.php")
     }
 
     /**

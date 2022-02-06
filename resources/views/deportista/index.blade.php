@@ -1,5 +1,4 @@
-
- @extends ("Plantilla.plantillabase")
+@extends ("Plantilla.plantillabase")
 
  @section("contenido");
 <a href="deportistas/create" class="btn btn-primary">Crear Deportista </a>
@@ -7,6 +6,7 @@
  <table class="table table-dark table-striped mt-4 ">
      <thead>
      <tr>
+         <!--Elementos de la tabla principal -->
          <th scope="col">ID</th>
          <th scope="col"> Nombre </th>
          <th scope="col">Apellido</th>

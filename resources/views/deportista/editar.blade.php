@@ -26,8 +26,7 @@
     </div>
 
    <a href=/deportistas  class= btn-btn-secundary> Cancelar
-
-    </form>
+   </form>
 @endsection
 
 

@@ -7,5 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Deportista extends Model
 {
-    use HasFactory;
+    protected $fillable=[
+        /*Validación de formularios*/
+    'nombre',
+        'apellido',
+        'direccion',
+        'temporadas',
+        'CosteLicencia',
+
+    ];
 }

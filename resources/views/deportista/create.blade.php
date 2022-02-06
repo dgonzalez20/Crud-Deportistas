@@ -1,4 +1,4 @@
-<!---->
+
 @include("views.Plantilla.plantillabase")
 
 @section("contenido")
