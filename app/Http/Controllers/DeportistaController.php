@@ -123,7 +123,7 @@ class DeportistaController extends Controller
 
         // En base al identificadoor, usa el metódo delete 
         $deportitas_model->delete(); 
-        return redirect()->back();
+        return redirect("deportistas");
         //return view("deportista.delete");
     }
 }
