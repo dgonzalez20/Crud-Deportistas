@@ -29,8 +29,14 @@
       <td>{{$deportista->coste_licencia}}</td>
          <td>
              <a class=" btn btn-info">Editar Deportista </a>
-             <button class="btn-btn-danger">Eliminar Deportista </button>
          </td>
+         <td>
+            <form action="{{  url("deportistas/{{ $deportista->id}}")}}" method="`POST">
+                @csrf
+                @method("DELETE")
+            <button class="btn-btn-danger">Eliminar Deportista </button>
+            </form>
+        </td>
      </tr>
      @endforeach
      </tbody>

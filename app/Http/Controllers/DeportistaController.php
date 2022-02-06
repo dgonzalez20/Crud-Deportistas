@@ -118,6 +118,11 @@ class DeportistaController extends Controller
 
     public function destroy($id)
     {
-        return view("deportista.delete");
+
+        $deportitas_model = Deportista::find($id);
+
+        // En base al identificadoor, usa el metódo delete 
+        $deportitas_model->delete(); 
+        //return view("deportista.delete");
     }
 }
