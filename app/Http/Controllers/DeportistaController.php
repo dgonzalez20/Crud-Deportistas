@@ -103,7 +103,7 @@ class DeportistaController extends Controller
         $deportista->temporadas=$request->get("temporadas");
         $deportista->CoosteLicencia=$request->get("CosteLicencia");
 
-        return redirect('/deportistas')
+        return redirect('/deportistas');
     }
 
     /**

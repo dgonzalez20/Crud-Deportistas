@@ -28,7 +28,7 @@
     </div>
 
 <!--Enlace a deportistas, en boton que redirecciona a la lista de deportistas que ya estan creados -->
-    <a href="/deportistas" class="btn btn-secondary" tabindex="5">Cancelar Creación </a>
+    <a href="{{ url("deportistas") }}" class="btn btn-secondary" tabindex="5">Cancelar Creación </a>
     <!--Botón para guardar los registros que se creen en el  formulariophp-->
     <button type="submit" class="btn btn-primary" tabindex="4">Guardar  Deportista </button>
 </form>
