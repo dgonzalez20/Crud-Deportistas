@@ -25,7 +25,12 @@
         <input id="CosteLicencia" name="CosteLicencia" type="float" step="any"  class="form-control" value="{{ old('apellido') }}">
     </div>
 
-   <a href=/deportistas  class= btn-btn-secundary> Cancelar
+   <a href="{{ url("deportistas") }}"  class= btn-btn-secundary> Cancelar</a>
+
+   <button type="submit" class="btn-btn-danger">Editar Deportista </button>
+
+
+
 
 
     
