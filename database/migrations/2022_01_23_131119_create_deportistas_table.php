@@ -18,7 +18,7 @@ class CreateDeportistasTable extends Migration
             $table->string("nombre");
             $table->string("apellido");
             $table->string("direccion",);
-            $table->string("temporadas");
+            $table->string("temporadas")->nullable();
             $table->string("coste_licencia");
             $table->timestamps();
 
