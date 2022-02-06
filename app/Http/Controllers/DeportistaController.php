@@ -95,18 +95,22 @@ class DeportistaController extends Controller
      * Metódo que actualiza registros estos van filtrados por id
      * Request, método Get metodo del formulario
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,Deportista $deportista)
 
     {
-        $deportista=Deportista::find($id);
+        $deportista->update($request->all());
+        return redirect('deportistas');
 
-        $deportista->nombre=$request->get("nombre");
-        $deportista->apellido=$request->get("apellido");
-        $deportista->direccion=$request->get("direccion");
-        $deportista->temporadas_value=$request->get("temporadas_value");
-        $deportista->coste_licencia=$request->get("coste_licencia");
+        
+        // $deportista=Deportista::find($id);
 
-        $deportista->update(); 
+        // $deportista->nombre=$request->get("nombre");
+        // $deportista->apellido=$request->get("apellido");
+        // $deportista->direccion=$request->get("direccion");
+        // $deportista->temporadas_value=$request->get("temporadas_value");
+        // $deportista->coste_licencia=$request->get("coste_licencia");
+
+        // $deportista->update(); 
 
         return redirect('deportistas');
     }
