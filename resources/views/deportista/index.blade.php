@@ -22,11 +22,11 @@
       @foreach ($deportistas as $deportista)
      <tr>
       <td>{{$deportista->id }}</td>
-      <td>{{$deportista->Nombre}}</td>
-      <td>{{$deportista->Apellido }}</td>
-      <td>{{$deportista->Dirección}} </td>
-      <td>{{$deportista->Temporadas}} </td>
-      <td>{{$deportista->Coste_Licencia}}</td>
+      <td>{{$deportista->nombre}}</td>
+      <td>{{$deportista->apellido }}</td>
+      <td>{{$deportista->direccion}} </td>
+      <td>{{$deportista->temporadas}} </td>
+      <td>{{$deportista->coste_licencia}}</td>
          <td>
              <a class=" btn btn-info">Editar Deportista </a>
              <button class="btn-btn-danger">Eliminar Deportista </button>
