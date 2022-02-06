@@ -66,7 +66,7 @@ class DeportistaController extends Controller
     public function show($id)
     {
 
-        return view("borrar.blade.php")
+
     }
 
     /**
@@ -102,6 +102,8 @@ class DeportistaController extends Controller
         $deportista->direcccion=$request->get("direccion");
         $deportista->temporadas=$request->get("temporadas");
         $deportista->CoosteLicencia=$request->get("CosteLicencia");
+
+        return redirect('/deportistas')
     }
 
     /**
