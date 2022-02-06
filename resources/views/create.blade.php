@@ -1,5 +1,5 @@
 
-@include("views.Plantilla.plantillabase")
+@extends("Plantilla.plantillabase")
 
 @section("contenido")
  h2>Crear nuevo Deportista </h2>
