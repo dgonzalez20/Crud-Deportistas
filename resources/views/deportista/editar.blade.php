@@ -5,24 +5,24 @@
     @method("PUT")
 
     <div class="mb-3">
-        <label for="" class="form-label">Nombre</label>
+        <label for="nombre" class="form-label">Nombre</label>
         <input id="nombre" name="nombre" type="text" class="form-control" value="{{ old('nombre'),$deportista->nombre }}">
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">Apellido</label>
+        <label for="apellido" class="form-label">Apellido</label>
         <input id="apellido" name="apellido" type="text" class="form-control" value="{{ old('apellido'), $deportista->apellido }}">
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">Dirección </label>
+        <label for="direccion" class="form-label">Dirección </label>
         <input id="direccion" name="direccion" type="text" class="form-control" value="{{ old('direccion') }}">
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">Temporadas </label>
-        <input id="temporadas" name="temporadas " type="number" step="any" value="0.00" class="form-control" value="{{ old('temporradas') }}"}>
+        <label for="temporadas_value" class="form-label">Temporadas </label>
+        <input id="temporadas_value" name="temporadas_value " type="number" step="any" value="0.00" class="form-control" value="{{ old('temporradas') }}"}>
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">Coste Licencia  </label>
-        <input id="CosteLicencia" name="CosteLicencia" type="float" step="any"  class="form-control" value="{{ old('apellido') }}">
+        <label for="coste_licencia" class="form-label">Coste Licencia  </label>
+        <input id="coste_licencia" name="coste_licencia" type="float" step="any"  class="form-control" value="{{ old('apellido') }}">
     </div>
 
    <a href="{{ url("deportistas") }}"  class= btn-btn-danger> Cancelar</a>
