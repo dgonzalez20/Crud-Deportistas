@@ -28,14 +28,7 @@
    <a href="{{ url("deportistas") }}"  class= btn-btn-danger> Cancelar</a>
 
    <button type="submit" class="btn-btn-danger">Editar Deportista </button>
-
-
-
-
-
-    
-    
-   </form>
+</form>
 @endsection
 
 

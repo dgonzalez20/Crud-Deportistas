@@ -112,7 +112,7 @@ class DeportistaController extends Controller
 
         // $deportista->update(); 
 
-        return redirect('deportistas');
+        return redirect('/deportistas');
     }
 
     /**
@@ -130,7 +130,7 @@ class DeportistaController extends Controller
 
         // En base al identificadoor, usa el metódo delete 
         $deportitas_model->delete(); 
-        return redirect("deportistas");
+        return redirect("/deportistas");
         //return view("deportista.delete");
     }
 }
