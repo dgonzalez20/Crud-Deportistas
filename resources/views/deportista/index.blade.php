@@ -33,7 +33,7 @@
           
          </td>
          <td>
-            <form action="{{  url("deportistas/".$deportista->id)}}" method="POST">
+        <form action="{{"/deportistas/".$deportista->id)}}" method="POST">
                 @csrf
                 @method("DELETE")
             <button type="submit" class="btn-btn-danger">Eliminar Deportista </button>
