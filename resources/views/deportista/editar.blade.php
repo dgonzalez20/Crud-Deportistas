@@ -1,6 +1,6 @@
 @extends("Plantilla.plantillabase")
 @section("contenido")
-<form action={{ url("deportistas/".$deportista->id)}}" method="POST">
+<form action="{{ url("deportistas/".$deportista->id)}}" method="POST">
     @csrf
     @method("PUT")
 
